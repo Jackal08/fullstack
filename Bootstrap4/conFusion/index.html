@@ -37,12 +37,17 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6 col-lg-9">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-sm-3 align-self-center">
+                    <a href="#booktable" class="btn btn-warning btn-sm col-sm-12" role="button" aria-pressed="true">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -50,16 +55,16 @@
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>Our Lipsmacking Culinary Creations</h3>
-            </div>
+            <h2 class="col-12 col-sm-4 order-sm-last col-md-3">
+                <strong>Our Lipsmacking Culinary Creations</strong>
+            </h2>
 
-            <div class="media">
+            <div class="media col-12 col-sm-8">
                 <img class="d-flex mr-3 img-thumbnail align-self-center"
                      src="img/uthappizza.png" alt="Uthappizza">
-                <div class="media-body">
+                <div class="media-body col-6 col-sm-12">
                     <h2 class="mt-0">
-                        Uthappizza
+                        <strong>Uthappizza</strong>
                         <span class="badge badge-danger">HOT</span>
                         <span class="badge badge-pill badge-secondary">$4.99</span>
                     </h2>
@@ -68,28 +73,38 @@
                         topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and
                         Buffalo Paneer.</p>
                 </div>
+
             </div>
         </div>
 
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
-                <h3>This Month's Promotions</h3>
-            </div>
-            <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            <h2 class="col-12 col-sm-4 order-sm-first col-md-3">
+                <strong>This Month's Promotions</strong>
+            </h2>
+            <div class="media col-12 col-sm-8">
+                <div class="media-body col-6 col-sm-12">
+                    <h2 class="mt-0">
+                        <strong>Weekend Grand Buffet</strong>
+                        <span class="badge badge-danger">NEW</span>
+                    </h2>
+                    <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing
+                        appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks.
+                        All for just $19.99 per person
+                    </p>
+                </div>
+                <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet">
             </div>
         </div>
 
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>Meet our Culinary Specialists</h3>
-            </div>
-            <div class="media">
-                <img class="d-flex mr-3 img-thumbnail align-self-center"
-                     src="img/alberto.png" alt="Alberto Somayya">
-                <div class="media-body">
+            <h2 class="col-12 col-sm-4 order-sm-last col-md-3">
+                <strong>Meet our Culinary Specialists</strong>
+            </h2>
+
+            <div class="media col-12 col-sm-8">
+                <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/alberto.png" alt="Alberto Somayya">
+                <div class="media-body col-6 col-sm-12">
                     <h2 class="mt-0">Alberto Somayya</h2>
                     <h4>Executive Chef</h4>
                     <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience
@@ -99,6 +114,63 @@
                 </div>
             </div>
         </div>
+
+        <!--Form-->
+        <div class="col-12 col-sm-8 mx-auto" id="booktable">
+            <div class="card mb-5">
+                <div class="card-header bg-warning text-white">
+                    <h2 class="text-center">Reserve a Table</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <label for="flexRadioDefault1" class="col-sm-3 col-form-label">Number of Guests</label>
+
+                        <div class="form-check form-check-inline ml-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                            <label class="form-check-label" for="flexRadioDefault4">4</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                            <label class="form-check-label" for="flexRadioDefault5">5</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                            <label class="form-check-label" for="flexRadioDefault6">6</label>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="inputDate" class="col-sm-3 col-form-label">Date and Time</label>
+                        <div class="col-sm-4">
+                            <input type="date" class="form-control" id="inputDate">
+                        </div>
+                        <div class="col-sm-4">
+                            <input type="time" class="form-control" id="inputTime">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="reserveBtn" class="col-4 col-sm-3 col-form-label mr-3"></label>
+                        <button class="col-sm-3 col-md-3 btn btn-primary" id="reserveBtn" href="#">
+                            Reserve
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--End Form-->
+
     </div>
 
     <footer class="footer">
